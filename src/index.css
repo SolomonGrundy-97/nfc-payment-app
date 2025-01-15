@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* NFC CSS STYLING */
+
+.bg_image {
+  background-image: url('./assets/images/form_image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
