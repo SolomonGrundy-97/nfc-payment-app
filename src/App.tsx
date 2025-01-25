@@ -9,6 +9,7 @@ import ForgotPassword from './pages/ForgotPassword'
 import ContinueToLogin from './pages/ContinueToLogin'
 import ResetPassword from './pages/ResetPassword'
 import VerifyEmail from './pages/VerifyEmail'
+import Dashboard from './pages/Dashboard'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
     <Route path='/continuetologin' element={<ContinueToLogin />} />
     <Route path='/resetpassword' element={<ResetPassword />} />
     <Route path='/verifyemail' element={<VerifyEmail />} />
+    <Route path='/dashboard' element={<Dashboard />} />
     </Routes>
     </>
   )
