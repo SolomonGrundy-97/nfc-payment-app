@@ -10,6 +10,8 @@ import ContinueToLogin from './pages/ContinueToLogin'
 import ResetPassword from './pages/ResetPassword'
 import VerifyEmail from './pages/VerifyEmail'
 import Dashboard from './pages/Dashboard'
+import Transactions from './pages/Transactions'
+//import FundWallet from './components/FundWallet'
 
 function App() {
 
@@ -23,6 +25,7 @@ function App() {
     <Route path='/resetpassword' element={<ResetPassword />} />
     <Route path='/verifyemail' element={<VerifyEmail />} />
     <Route path='/dashboard' element={<Dashboard />} />
+    <Route path='/transactions' element={<Transactions />} />
     </Routes>
     </>
   )

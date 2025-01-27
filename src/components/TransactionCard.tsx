@@ -23,10 +23,10 @@ const TransactionCard: React.FC<TransactionCardProps> = ({
 
       <div className="flex items-center gap-3">
         {/* Transaction Icon */}
-        <img src={icon} alt={description} className="w-8 h-8" />
+        <img src={icon} alt={description} className="w-9 h-9" />
         <div>
-          <p className="text-nfcWhite text-sm font-semibold">{description}</p>
-          <p className="text-gray-400 text-xs">{date}</p>
+          <p className="text-nfcWhite text-start text-sm font-semibold mb-2">{description}</p>
+          <p className="text-gray-400 text-start text-xs">{date}</p>
         </div>
       </div>
       <p
