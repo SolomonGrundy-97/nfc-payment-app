@@ -11,21 +11,24 @@ import ResetPassword from './pages/ResetPassword'
 import VerifyEmail from './pages/VerifyEmail'
 import Dashboard from './pages/Dashboard'
 import Transactions from './pages/Transactions'
-//import FundWallet from './components/FundWallet'
+import NewCard from './pages/NewCard'
+import NewBank from './pages/NewBank'
 
 function App() {
 
   return (
      <>
      <Routes>
-    <Route path='/signup' element={<SignUp />} />
-    <Route path='/login' element={<Login />} />
-    <Route path='/forgotpassword' element={<ForgotPassword />} />
-    <Route path='/continuetologin' element={<ContinueToLogin />} />
-    <Route path='/resetpassword' element={<ResetPassword />} />
-    <Route path='/verifyemail' element={<VerifyEmail />} />
-    <Route path='/dashboard' element={<Dashboard />} />
-    <Route path='/transactions' element={<Transactions />} />
+      <Route path='/signup' element={<SignUp />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/forgotpassword' element={<ForgotPassword />} />
+      <Route path='/continuetologin' element={<ContinueToLogin />} />
+      <Route path='/resetpassword' element={<ResetPassword />} />
+      <Route path='/verifyemail' element={<VerifyEmail />} />
+      <Route path='/dashboard' element={<Dashboard />} />
+      <Route path='/transactions' element={<Transactions />} />
+      <Route path='/newcard' element={<NewCard onClose={() => console.log("Modal closed")}/>} />
+      <Route path='/newbank' element={<NewBank onClose={() => console.log("Modal closed")}/>} />
     </Routes>
     </>
   )

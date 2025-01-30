@@ -24,7 +24,7 @@ const Transactions = () => {
         </div>
       </div>
 
-      {/* IMPORT MATERIAL UI 'SELECT' AND 'OPTION' COMPONENT... */}
+      {/* Select-options */}
       <div className="flex mb-10 justify-center">
         <div className="pl-4">
           <select
