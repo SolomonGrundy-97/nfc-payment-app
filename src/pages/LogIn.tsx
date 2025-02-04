@@ -48,12 +48,14 @@ const Login = () => {
             </div>
           </div>
 
+          <Link to="/dashboard">
           <button
             type="submit"
-            className="w-full bg-nfcBlue hover:bg-blue-600 text-nfcWhite py-3 rounded-full transition"
+            className="w-full bg-nfcBlue hover:bg-blue-600 text-nfcWhite py-3 rounded-full transition mt-7"
           >
-            Continue
+              Continue
           </button>
+          </Link>
 
           <span className="flex w-full py-3 items-center justify-center text-nfcWhite hover:cursor-pointer transition">
             <span className="mr-2">

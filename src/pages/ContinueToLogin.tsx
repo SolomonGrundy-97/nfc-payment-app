@@ -80,12 +80,14 @@ const Login = () => {
           </Link>
 
           {/* Buttons */}
+          <Link to="/dashboard">
           <button
             type="submit"
-            className="w-full bg-nfcBlue hover:bg-blue-600 text-white py-3 rounded-full transition"
+            className="w-full bg-nfcBlue hover:bg-blue-600 text-white py-3 rounded-full transition mt-8"
           >
             Log in
           </button>
+          </Link>
 
           <span className="flex w-full py-3 items-center justify-center text-nfcWhite hover:cursor-pointer transition">
             <span className="mr-2">

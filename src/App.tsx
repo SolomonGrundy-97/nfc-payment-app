@@ -19,10 +19,10 @@ function App() {
   return (
      <>
      <Routes>
+     <Route path='/' element={<ContinueToLogin />} />
       <Route path='/signup' element={<SignUp />} />
       <Route path='/login' element={<Login />} />
       <Route path='/forgotpassword' element={<ForgotPassword />} />
-      <Route path='/continuetologin' element={<ContinueToLogin />} />
       <Route path='/resetpassword' element={<ResetPassword />} />
       <Route path='/verifyemail' element={<VerifyEmail />} />
       <Route path='/dashboard' element={<Dashboard />} />

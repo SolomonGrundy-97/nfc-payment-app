@@ -182,6 +182,7 @@ import { AiOutlineEyeInvisible } from "react-icons/ai";
 import { BsEye } from "react-icons/bs";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -320,13 +321,15 @@ const SignUp = () => {
           </div>
 
           {/* Buttons */}
+          <Link to="/dashboard">
           <button
             type="submit"
-            className="w-full bg-nfcBlue hover:bg-blue-600 text-nfcWhite py-3 rounded-full transition"
+            className="w-full bg-nfcBlue hover:bg-blue-600 text-nfcWhite py-3 rounded-full transition mt-8"
           >
-            Continue
+              Continue
           </button>
-
+          </Link>
+  
           <span className="flex w-full py-3 items-center justify-center text-nfcWhite hover:cursor-pointer transition">
             <span className="mr-2">
               <FcGoogle size={20} />
