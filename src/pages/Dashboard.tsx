@@ -231,7 +231,7 @@ import CopyIcon from "../assets/icons/Icon.png";
 
 const Dashboard = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedMethod, setSelectedMethod] = useState(null); // Track selected funding method
+  const [selectedMethod, setSelectedMethod] = useState<string | null>(null); // Track selected funding method
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -242,7 +242,7 @@ const Dashboard = () => {
     setSelectedMethod(null); // Reset selection
   };
 
-  const handleSelectMethod = (method) => {
+  const handleSelectMethod = (method: string) => {
     setSelectedMethod(method);
   };
 
