@@ -1,4 +1,4 @@
-//import React from 'react'
+import { Link } from "react-router-dom";
 import TransactionCard from "../components/TransactionCard";
 import TransportIcon from "../assets/icons/Group 9.png";
 import UpArrowIcon from "../assets/icons/Group 7.png";
@@ -18,7 +18,9 @@ const Transactions = () => {
           <span className="">
             <div className="flex gap-4 lg:mx-6">
               <img src={BellIcon} alt="logo" />
-              <img src={MRIcon} alt="logo" />
+              <Link to="/accountprofile">
+                <img src={MRIcon} alt="logo" />
+              </Link>
             </div>
           </span>
         </div>
@@ -32,30 +34,54 @@ const Transactions = () => {
             id=""
             className="mr-4 py-1 pl-6 pr-8 text-start bg-nfcThickBlack border border-linearGradient_2 text-nfcMilkGray hover:border-nfcMilkGray rounded-lg"
           >
-            <option value="" className="text-xs">All Categories </option>
-            <option value="" className="text-xs">1</option>
-            <option value="" className="text-xs">2</option>
-            <option value="" className="text-xs">3</option>
+            <option value="" className="text-xs">
+              All Categories{" "}
+            </option>
+            <option value="" className="text-xs">
+              1
+            </option>
+            <option value="" className="text-xs">
+              2
+            </option>
+            <option value="" className="text-xs">
+              3
+            </option>
           </select>
           <select
             name=""
             id=""
             className="mr-4 py-1 pl-6 pr-8 text-start bg-nfcThickBlack border border-linearGradient_2 text-nfcMilkGray hover:border-nfcMilkGray rounded-lg"
           >
-            <option value="" className="text-xs">All Status</option>
-            <option value="" className="text-xs">1</option>
-            <option value="" className="text-xs">2</option>
-            <option value="" className="text-xs">3</option>
+            <option value="" className="text-xs">
+              All Status
+            </option>
+            <option value="" className="text-xs">
+              1
+            </option>
+            <option value="" className="text-xs">
+              2
+            </option>
+            <option value="" className="text-xs">
+              3
+            </option>
           </select>
           <select
             name=""
             id=""
             className="px-4 py-1 text-start bg-nfcThickBlack border border-linearGradient_2 text-nfcMilkGray hover:border-nfcMilkGray rounded-lg mt-4"
           >
-            <option value="" className="text-xs">Dec</option>
-            <option value="" className="text-xs">1</option>
-            <option value="" className="text-xs">2</option>
-            <option value="" className="text-xs">3</option>
+            <option value="" className="text-xs">
+              Dec
+            </option>
+            <option value="" className="text-xs">
+              1
+            </option>
+            <option value="" className="text-xs">
+              2
+            </option>
+            <option value="" className="text-xs">
+              3
+            </option>
           </select>
         </div>
       </div>

@@ -257,7 +257,10 @@ const Dashboard = () => {
             <span className="">
               <div className="flex gap-4 lg:mx-6">
                 <img src={BellIcon} alt="notification icon" />
-                <img src={MRIcon} alt="user profile icon" />
+
+                <Link to="/accountprofile">
+                  <img src={MRIcon} alt="user profile icon" />
+                </Link>
               </div>
             </span>
           </div>
