@@ -18,6 +18,9 @@ import AccountProfile from "./pages/AccountProfile";
 import CardDetails from "./pages/CardDetails";
 import BankDetails from "./pages/BankDetails";
 import PaymentMethod from "./pages/PaymentMethod";
+import Notifications from "./pages/Notifications";
+import FundWallet from "./pages/FundWallet";
+import WithdrawWallet from "./pages/WithdrawWallet";
 
 function App() {
   return (
@@ -35,6 +38,10 @@ function App() {
         <Route path="/carddetails" element={<CardDetails />} />
         <Route path="/bankdetails" element={<BankDetails />} />
         <Route path="/paymentmethod" element={<PaymentMethod />} />
+        <Route path="/notifications" element={<Notifications />} />
+        <Route path="/editprofile" element={<EditProfile />} />
+        <Route path="/fundwallet" element={<FundWallet />} />
+        <Route path="/withdrawwallet" element={<WithdrawWallet />} />
         <Route
           path="/newcard"
           element={<NewCard onClose={() => console.log("Modal closed")} />}
@@ -43,7 +50,6 @@ function App() {
           path="/newbank"
           element={<NewBank onClose={() => console.log("Modal closed")} />}
         />
-        <Route path="/editprofile" element={<EditProfile />} />
       </Routes>
     </>
   );

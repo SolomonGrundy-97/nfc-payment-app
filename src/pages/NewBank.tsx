@@ -39,10 +39,18 @@ const NewCard = ({ onClose }: { onClose: () => void }) => {
             onChange={(e) => setBankName(e.target.value)}
             className="w-full px-4 py-2 bg-nfcLightBlack border border-nfcMilkGray text-gray-400 rounded-3xl outline-none focus:ring-2 focus:ring-nfcMilkGray"
           >
-            <option value="" className="text-nfcWhite text-xs">Bank name</option>
-            <option value="bank1" className="text-nfcWhite text-xs">Bank 1</option>
-            <option value="bank2" className="text-nfcWhite text-xs">Bank 2</option>
-            <option value="bank3" className="text-nfcWhite text-xs">Bank 3</option>
+            <option value="" className="text-nfcWhite text-xs">
+              Bank name
+            </option>
+            <option value="bank1" className="text-nfcWhite text-xs">
+              Bank 1
+            </option>
+            <option value="bank2" className="text-nfcWhite text-xs">
+              Bank 2
+            </option>
+            <option value="bank3" className="text-nfcWhite text-xs">
+              Bank 3
+            </option>
           </select>
           <input
             type="text"

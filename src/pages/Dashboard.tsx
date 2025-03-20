@@ -256,7 +256,9 @@ const Dashboard = () => {
             <img src={Logo} alt="logo" className="w-15 h-12" />
             <span className="">
               <div className="flex gap-4 lg:mx-6">
-                <img src={BellIcon} alt="notification icon" />
+                <Link to="/notifications">
+                  <img src={BellIcon} alt="notification icon" />
+                </Link>
 
                 <Link to="/accountprofile">
                   <img src={MRIcon} alt="user profile icon" />
@@ -304,9 +306,12 @@ const Dashboard = () => {
             >
               <button className="text-nfcWhite text-center">Fund wallet</button>
             </span>
-            <span className="bg-nfcLightBlack border border-nfcMilkGray text-center hover:cursor-pointer pl-11 pr-11 pt-3 pb-3 rounded-3xl">
+            <Link
+              to="/withdrawwallet"
+              className="bg-nfcLightBlack border border-nfcMilkGray text-center hover:cursor-pointer pl-11 pr-11 pt-3 pb-3 rounded-3xl"
+            >
               <button className="text-nfcWhite text-center">Withdraw</button>
-            </span>
+            </Link>
           </div>
 
           <div className="mt-10">
@@ -513,9 +518,11 @@ const Dashboard = () => {
                   </div>
 
                   {/* Continue Button */}
-                  <button className="w-full mt-6 bg-blue-500 hover:bg-nfcBlue text-sm text-nfcWhite py-3 rounded-full transition">
-                    Continue
-                  </button>
+                  <Link to="/fundwallet" className="mt-8">
+                    <button className="w-full mt-6 bg-blue-500 hover:bg-nfcBlue text-sm text-nfcWhite py-3 rounded-full transition">
+                      Continue
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
